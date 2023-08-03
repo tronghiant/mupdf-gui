@@ -1,6 +1,7 @@
-# vue3101
+# mupdf GUI
+A electron project act as a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) for [mupdf](https://mupdf.com/) tool
 
-This template should help get you started developing with Vue 3 in Vite.
+This project was created using [create-vue](https://github.com/vuejs/create-vue) and using [electron-forge](https://www.electronforge.io/) for packaging.
 
 ## Recommended IDE Setup
 
@@ -30,13 +31,13 @@ yarn
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn dev
+yarn start
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-yarn build
+yarn make
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
