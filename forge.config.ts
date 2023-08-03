@@ -1,8 +1,10 @@
 import type { ForgeConfig } from "@electron-forge/shared-types";
 import { MakerSquirrel } from "@electron-forge/maker-squirrel";
 import { MakerZIP } from "@electron-forge/maker-zip";
-import { AutoUnpackNativesPlugin } from "@electron-forge/plugin-auto-unpack-natives";
-import { VitePlugin } from "@electron-forge/plugin-vite";
+// import { MakerDMG } from '@electron-forge/maker-dmg'
+import { MakerDeb } from '@electron-forge/maker-deb'
+import { AutoUnpackNativesPlugin } from '@electron-forge/plugin-auto-unpack-natives'
+import { VitePlugin } from '@electron-forge/plugin-vite'
 
 const config: ForgeConfig = {
   packagerConfig: {
@@ -12,7 +14,9 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({ setupIcon: 'electron/icons/icon.ico' }),
-    new MakerZIP({}, ['darwin'])
+    new MakerZIP({}, ['darwin']),
+    new MakerDeb({})
+    // new MakerDMG({})
   ],
   publishers: [],
   plugins: [
