@@ -1,7 +1,21 @@
+[![SonarCloud]](https://sonarcloud.io/summary/new_code?id=tronghiant_mupdf-gui)
+
+![Coverage]
+![Lines of Code]
+![Duplicated Lines]
+![Bugs]
+![Code Smells]
+![Vulnerabilities]
+![Reliability]
+![Maintainability]
+![Technical Debt]
+![Security Rating]
+
 # mupdf GUI
 A electron project act as a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) for [mupdf](https://mupdf.com/) tool
 
 This project was created using [create-vue](https://github.com/vuejs/create-vue) and using [electron-forge](https://www.electronforge.io/) for packaging.
+
 
 ## Recommended IDE Setup
 
@@ -70,3 +84,15 @@ yarn test:e2e --debug
 ```sh
 yarn lint
 ```
+
+[SonarCloud]: https://sonarcloud.io/images/project_badges/sonarcloud-white.svg
+[Lines of Code]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=ncloc
+[Duplicated Lines]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=duplicated_lines_density
+[Coverage]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=coverage
+[Bugs]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=bugs
+[Code Smells]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=code_smells
+[Vulnerabilities]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=vulnerabilities
+[Reliability]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=reliability_rating
+[Maintainability]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=sqale_rating
+[Technical Debt]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=sqale_index
+[Security Rating]: https://sonarcloud.io/api/project_badges/measure?project=tronghiant_mupdf-gui&metric=security_rating
