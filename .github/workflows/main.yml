@@ -1,0 +1,32 @@
+name: Lint, test and package
+
+on:
+  pull_request:
+  push:
+    branches:
+      # - dev
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+            fetch-depth: 0
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          key: actions_cache_${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          path: |
+            node_modules
+            .yarn/cache
+      - name: Install dependency packages
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+      - name: Test
+        run: yarn test:unit:ci
+      - name: Package
+        run: yarn package
