@@ -51,7 +51,7 @@
     "@vue/test-utils": "^2.4.1",
     "@vue/tsconfig": "^0.4.0",
     "autoprefixer": "^10.4.14",
-    "electron": "^25.3.2",
+    "electron": "^25.8.1",
     "electron-store": "^8.1.0",
     "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
